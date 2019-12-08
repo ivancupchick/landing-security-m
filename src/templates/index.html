@@ -1,0 +1,44 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	<div class="hero">
+		<div class="container">
+			<div class="head">
+				<div class="header__logo">
+					<h2>BLAH</h2>
+				</div>
+
+				<a href="tel:" class="header__phone"></a>
+				<a href="tel:" class="header__call"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- {# variable example #}
+	<h1>{{title}}</h1> -->
+
+
+	<!--
+	{# partial example #}
+	{% include "partials/_header.html" %}
+
+	{# mixin example #}
+	{{mixins.icon('facebook')}}
+	-->
+
+
+	<!--
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #}
+	-->
+
+{% endblock %}
