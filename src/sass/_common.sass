@@ -1,7 +1,210 @@
 body
-	background: #ff0
-	font-size: 200px
+	background: #3e393f
+	font-size: 20px
 	// +css-lock(16, 50, 600, 1000)
 	line-height: 1.4
 	// font-fanily: "Ubuntu"
-dw
+
+.container
+	margin: 0 auto
+	max-width: 940px
+	+r(980)
+		margin: 0 20px
+
+.hero
+
+	// background-size: cover
+	// background-position: 50% 100%
+	// background-repeat: no-repeat
+	.container
+		height: 100vh
+		min-height: 500px
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-around
+
+		.nav
+			display: flex
+			justify-content: space-between
+			width: 90%
+
+		.speedometr
+			background-size: cover
+			background-position: 50% 100%
+			background-repeat: no-repeat
+			width: 100%
+			height: 0
+			padding-top: 49.4%
+			display: flex
+
+
+			.left-button-block, right-button-block
+				bottom: 380px
+				position: relative
+
+			.left-button-block
+				left: 60px
+				width: 350px
+				// background: green
+				height: 340px
+				display: flex
+				flex-direction: column
+
+				&>div
+					height: 33%
+					// background: yellow
+					display: flex
+					justify-content: space-around
+					align-items: center
+
+					.icon
+						background-size: cover
+						background-position: 50% 100%
+						background-repeat: no-repeat
+						width: 90px // conver to %
+						height: 90px // conver to %
+						position: relative
+						overflow: hidden
+						cursor: pointer
+
+						&:before
+							content: ' '
+							position: absolute
+							top: 0
+							left: 0
+							width: 20px
+							height: 90px
+							background-color: rgba(#fff, .4)
+							transform: translateX(-4em) skewX(-45deg)
+							// animation: move-light .8s infinite
+							// animation-delay: 3s
+							// animation-duration: 3s
+
+
+						&:hover:before
+							animation: move-light .8s
+							animation-delay: .4s
+
+@keyframes move-light
+
+	from
+		transform: translateX(-4em) skewX(-45deg)
+	to
+		transform: translateX(10em) skewX(-45deg)
+
+.text-page
+	width: 90%
+	max-width: 1100px
+	display: flex
+	margin: 0 auto
+
+	&>div
+		width: 50%
+		display: flex
+		padding: 10px
+		align-items: center
+		justify-content: center
+
+		.photo
+			background-size: cover
+			background-position: 50% 100%
+			background-repeat: no-repeat
+			background-image: url(../img/p.png)
+
+			width: 400px
+			height: 400px
+
+		&.text
+			display: flex
+			flex-direction: column
+
+			ul
+				list-style: none
+
+			ul li:before
+				content: "—"
+				position: relative
+				left: -5px
+
+
+
+
+
+
+
+
+.header
+	position: absolute
+	top: 100px
+	left: 0px
+
+
+.page1
+	width: 100%
+	min-height: 500px
+	background: #3f3f3f
+
+.page2
+	width: 100%
+	min-height: 500px
+	background: #313131
+
+
+
+
+
+
+
+
+.wrapper
+	background: #3e393f
+	position: relative
+	z-index: 20
+	box-shadow: 0 0 10px rgba(#000, .5)
+
+body
+	padding-bottom: 540px
+
+.footer
+	width: 100%
+	height: 540px
+	// background-repeat: no-repeat
+	// background-size: cover
+	// background-position: 50% 50%
+	background: #9c9a9a
+	position: fixed
+	bottom: 0
+	z-index: 1
+	left: 0
+	padding: 20px
+
+
+
+
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-around
+
+	.contacts
+		display: flex
+		flex-direction: column
+		align-items: center
+
+
+		&-icon
+			width: 17px
+			height: 18px
+			margin: 0 3px
+			display: inline-block
+			&.a1
+				content: ''
+				background: url(../img/contacts.png) no-repeat 0 -18px
+			&.mts
+				content: ''
+				background: url(../img/contacts.png) no-repeat 0 -35px
+			&.viber
+				content: ''
+				background: url(../img/contacts.png) no-repeat 0 -35px
