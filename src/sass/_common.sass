@@ -1,5 +1,13 @@
+$main-color: #3e393f
+$footer-color: #9c9a9a
+$page1-color: #9c9a9a
+$page2-color: #bfbfbf
+
+html
+  scroll-behavior: smooth
+
 body
-	background: #3e393f
+	background: $main-color
 	font-size: 20px
 	// +css-lock(16, 50, 600, 1000)
 	line-height: 1.4
@@ -30,6 +38,18 @@ body
 			justify-content: space-between
 			width: 90%
 
+			&-left
+				>a>svg
+					path
+						stroke: #ccc // add babel
+
+			&-right
+				>a
+					text-decoration: none
+					color: #ccc
+
+
+
 		.speedometr
 			background-size: cover
 			background-position: 50% 100%
@@ -59,15 +79,48 @@ body
 					justify-content: space-around
 					align-items: center
 
+					>span
+						position: absolute
+						color: #ccc
+						text-transform: uppercase
+						&.title
+							text-transform: uppercase
+							&-diagnos
+								top: -14px
+								left: 53px
+
+							&-airbag
+								top: -14px
+								right: 53px
+
+							&-lkas-acc
+								right: 0
+								bottom: 100px
+
+							&-keys
+								left: 20px
+								bottom: 100px
+
+							&-repair
+								bottom: -10px
+
 					.icon
 						background-size: cover
 						background-position: 50% 100%
 						background-repeat: no-repeat
-						width: 90px // conver to %
-						height: 90px // conver to %
+						width: 85px // conver to %
+						height: 85px // conver to %
 						position: relative
 						overflow: hidden
 						cursor: pointer
+
+						&-diagnos
+							margin-left: 20px
+
+						&-airbag
+							margin-right: 15px
+
+
 
 						&:before
 							content: ' '
@@ -81,14 +134,10 @@ body
 							// animation: move-light .8s infinite
 							// animation-delay: 3s
 							// animation-duration: 3s
-
-
-						&:hover:before
 							animation: move-light .8s
-							animation-delay: .4s
+							animation-delay: 1s
 
 @keyframes move-light
-
 	from
 		transform: translateX(-4em) skewX(-45deg)
 	to
@@ -144,12 +193,12 @@ body
 .page1
 	width: 100%
 	min-height: 500px
-	background: #3f3f3f
+	background: $page1-color
 
 .page2
 	width: 100%
 	min-height: 500px
-	background: #313131
+	background: $page2-color
 
 
 
@@ -159,7 +208,7 @@ body
 
 
 .wrapper
-	background: #3e393f
+	background: $main-color
 	position: relative
 	z-index: 20
 	box-shadow: 0 0 10px rgba(#000, .5)
@@ -173,7 +222,7 @@ body
 	// background-repeat: no-repeat
 	// background-size: cover
 	// background-position: 50% 50%
-	background: #9c9a9a
+	background: $footer-color
 	position: fixed
 	bottom: 0
 	z-index: 1
