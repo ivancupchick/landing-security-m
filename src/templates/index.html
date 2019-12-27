@@ -32,7 +32,7 @@ title: Index page
 				</div>
 			</div>
 
-			<div class="speedometr" style="background-image: url(img/speedometr.png);">
+			<div class="speedometr">
 				<div class="left-button-block">
 					<div class="first-line">
 						<span class="title-diagnos">Диагностика</span>
@@ -43,7 +43,7 @@ title: Index page
 					<div class="second-line">
 						<div class="icon" style="background-image: url(img/icon6.png);"></div>
 						<span class="title-keys">Ключи</span>
-						<div class="icon" style="background-image: url(img/icon3.png);"></div>
+						<div class="icon-without" style="background-image: url(img/icon3.png);"></div>
 						<div class="icon" style="background-image: url(img/icon5.png);"></div>
 						<span class="title-lkas-acc">LKAS ACC</span>
 					</div>
@@ -54,11 +54,24 @@ title: Index page
 				</div>
 
 				<div class="right-button-block">
-					<div class="first-line"></div>
+					<div class="icon" style="background-image: url(img/table.png);"></div>
+					<a href="#doosnast">
+						<div class="right-button-block-button correctia">Кореекция<br>Спидометра</div>
+					</a>
+					<a href="#doosnast">
+						<div class="right-button-block-button miles-to-km">Мили в километры</div>
+					</a>
+
+					<!-- <div class="first-line"></div>
+					<div class="second-line"></div>
+					<div class="third-line">
+
+					</div> -->
 				</div>
 			</div>
 
-			<div style="background-color: red; width: 100px; height: 20px;">
+			<div></div>
+			<!-- <div style="background-color: red; width: 100px; height: 20px;"> -->
 
 			</div>
 
@@ -73,11 +86,11 @@ title: Index page
 
 
 		</div>
-	</div>
+	<!-- </div> -->
 
 	<div class="page1 text-page">
 		<div>
-			<div class="photo"></div>
+			<div class="photo-diagnos"></div>
 		</div>
 
 		<div class="text">
@@ -96,13 +109,25 @@ title: Index page
 
 	<div class="page2 text-page">
 		<a name="repair"></a>
-		<div>
-			<div class="photo"></div>
-		</div>
+		<a name="photo"></a>
+		<!-- <div>
 
-		<div class="text">
+		</div> -->
+
+		<div class="text text-page-all-size">
 			<h3>РЕМОНТ ЭЛЕКТРООБОРУДОВАНИЯ</h3>
-			<p>Мы производим ремонт электрооборудования автомобилей в Минске дешево. Ремонт блоков управления двигателя, АBS, иммобилайзера, программирование и восстановление чип-ключей по самым доступным ценам.</p>
+			<div class="part-with-photo">
+				<!-- <div class="photo-repair"></div> -->
+
+				<div class="part-with-photo-text">
+					<p><img src="../img/repairPhoto.png" alt="Ремонт автомобилей" align="left">Мы производим ремонт электрооборудования автомобилей в Минске дешево. Ремонт блоков управления двигателя, АBS, иммобилайзера, программирование и восстановление чип-ключей по самым доступным ценам.<br><br>
+					Вы можете позвонить нам в любое удобное для Вас время!
+						Работаем по принципу - сначала диагностика, а потом устранение неисправностей!
+					</p>
+				</div>
+
+			</div>
+
 			<h4>Поверьте, что 90% поломок можно устранить прямо на месте!</h4>
 			<ul>
 				<li>предварительно необходимо провести полную компьютерную диагностику вашего авто ( часто бывает, что клиенты описывая по телефону проблему не подозревают, что причина неисправности находится в совсем другом );</li>
@@ -126,16 +151,14 @@ title: Index page
 				<li>изготовление чип-ключей;</li>
 				<li><strong>по окончанию работ в качестве бонуса скидываем ошибки!</strong></li>
 			</ul>
-			<p>Вы можете позвонить нам в любое удобное для Вас время!
-					Работаем по принципу - сначала диагностика, а потом устранение неисправностей!
-					</p>
+
 		</div>
 	</div>
 
 	<div class="page1 text-page">
 		<a name="airbag"></a>
 		<div>
-			<div class="photo"></div>
+			<div class="photo-sbros"></div>
 		</div>
 
 		<div class="text">
@@ -156,8 +179,9 @@ title: Index page
 	</div>
 
 	<div class="page2 text-page">
+		<a name="podbor"></a>
 		<div>
-			<div class="photo"></div>
+			<div class="photo-podbor"></div>
 		</div>
 
 		<div class="text">
@@ -172,13 +196,14 @@ title: Index page
 				<li>Проверка истории покупки авто (аукционы Copart, IAAI, Manheim и пр.)</li>
 			</ul>
 
-			<button>Заказать услугу</button>
+			<button type="button" id="orderForm">Заказать услугу</button>
 		</div>
 	</div>
 
 	<div class="page1 text-page">
+		<a name="doosnast"></a>
 		<div>
-			<div class="photo"></div>
+			<div class="photo-doOsnast"></div>
 		</div>
 
 		<div class="text">
@@ -204,7 +229,7 @@ title: Index page
 
 	<div class="footer">
 
-		<div class="footer-images" style="width: 90%; height: 100px;"></div>
+		<!-- <div class="footer-images" style="width: 90%; height: 100px;"></div> -->
 		<div class="footer-text">
 			<p>Если ваш автомобиль неожиданно "затроил", перестал набирать обороты, загорелась лампочка "чек" check engine, или по непонятной причине вышли из строя электроприборы, то без компьютерной диагностики не обойтись.<br><br>
 					Проверить ваш автомобиль диагностическим прибором ( или перед его покупкой ), удалить ошибки, проверить состояние датчиков в режиме реального времени - наши специалисты готовы помочь в любое удобное для Вас время с выездом на место стоянки вашего авто.
@@ -213,10 +238,33 @@ title: Index page
 
 		<div class="contacts">
 			<h3>Контакты:</h3>
-			<span>+375 29 6504160 <span class="contacts-icon a1"></span></span> <!-- icons -->
-			<span>+375 33 6205678 <span class="contacts-icon mts"></span></span> <!-- icons -->
-			<span>usedpartsby@gmail.com</span>
+			<span><a href="tel:+375296504160 ">+375 29 6504160 </a><span class="contacts-icon a1"></span><span class="contacts-icon viber"></span><span class="contacts-icon whatsUp"></span></span> <!-- icons -->
+			<span><a href="tel:+375336205678">+375 33 6205678</a> <span class="contacts-icon mts"></span><span class="contacts-icon viber"></span><span class="contacts-icon whatsUp"></span></span> <!-- icons -->
+			<span><a href="mailto:usedpartsby@gmail.com">usedpartsby@gmail.com</a></span>
 		</div>
+	</div>
+
+
+	<div class="mobile-menu" style="display: none;">
+		<nav>
+			<a href="#diagnos">Диагностика</a>
+			<a href="#repair">Ремонт электроники</a>
+			<a href="#airbag">Сброс ощибка AIRBAG</a>
+			<a href="#podbor">Подбор автомобиля</a>
+			<a href="#doosnast">Дооснащение и шумоизоляция</a>
+			<a href="#contacts">Контакты</a>
+		</nav>
+	</div>
+
+	<div class="call-form" style="display: none;">
+		<div class="form">
+			<label for="name">Имя</label>
+			<input type="text" id="name">
+			<label for="phone">Телефон</label>
+			<input type="text" id="phone">
+		</div>
+
+		<button type="button" id="callButton">Заказать</button>
 	</div>
 
 	<!-- {# variable example #}
